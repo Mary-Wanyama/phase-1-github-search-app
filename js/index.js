@@ -1,11 +1,8 @@
-
-
-
-
 document.addEventListener('DOMContentLoaded', () =>{
+    e.preventDefault()
     const form = document.querySelector("#github-form");
     form.addEventListener('submit', (e) => {
-        e.preventDefault()
+        
         let search = e.target.search.value
         //console.log(search)
         handleSearch(search)
